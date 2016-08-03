@@ -1,3 +1,71 @@
-/* This is a multi-line
-comment. Add your CSS code
-from Unit 1 - 5 below  */
+/* stlyes the play space*/
+.board {
+	display: inline-block;
+	width: 50%;
+	height: 50%;
+}
+
+/* styles the cards */
+.card {
+	height: 200px;
+	width: 150px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: black;
+	background-color: #ffda00;
+	border-radius: 10px;
+	/* the instructions said to put
+	these next two lines in the .board class,  
+	but that doesn't seem right */
+	float: left; 
+	margin:8%;
+}
+
+h1{
+	color: #006080;
+}
+
+h2{
+	color: #ffd700;
+}
+
+.name {
+	color: #ff0000;
+}
+
+nav {
+	background-color: #808080;
+}
+
+nav a {
+	text-decoration: none;
+	color: white;
+	background-color: #ffbf00;
+	padding: 35px;
+	float: left;
+	display: block;
+}
+
+/*changes nav icon color on hover */
+nav a:hover {
+	background-color: #ee5f3c;
+}
+
+/* clearfix */
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	content: " ";
+	clear: both;
+	height: 0;
+	font-size: 0;
+}
+
+header {
+	text-align: center;
+}
+
+footer {
+	background-color: #808080;
+	text-align: center;
+}
