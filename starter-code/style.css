@@ -65,7 +65,28 @@ header {
 	text-align: center;
 }
 
+button{
+	float: left;
+	display: block;
+	border: 0;
+    padding: 10px;
+    font-size: 18px;
+    background:#a10b0b;
+    color:white;
+
+}
+
 footer {
 	background-color: #808080;
 	text-align: center;
+}
+
+img {
+	height: 199px;
+	width: 149px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: black;
+	background-color: #ffda00;
+	border-radius: 10px;
 }
