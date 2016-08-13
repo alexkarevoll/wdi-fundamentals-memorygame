@@ -34,10 +34,10 @@ var createBoard = function() {
 // currently matches if same card is clicked twice
 var isMatch = function(){
 	if (cardsInPlay[0] === cardsInPlay[1]){
-		alert("You found a match!");
+		setTimeout(function(){ alert("You found a match!"); }, 200);
 		} 
-		else {
-		alert("Sorry, try again");
+	else {
+		setTimeout(function(){ alert("You found a match!"); }, 200);
 	};
 };
 

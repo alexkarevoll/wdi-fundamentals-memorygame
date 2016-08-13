@@ -34,7 +34,7 @@ h2{
 }
 
 nav {
-	background-color: #808080;
+	background-color: #ffbf00;
 }
 
 nav a {
@@ -48,7 +48,7 @@ nav a {
 
 /*changes nav icon color on hover */
 nav a:hover {
-	background-color: #ee5f3c;
+	background-color: #a10b0b;
 }
 
 /* clearfix */
