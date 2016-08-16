@@ -1,16 +1,24 @@
 console.log("JS file is connected to HTML! Woo!")
 
-// Old code to set the values of the four cards for comparing later//
-/*
-var cardOne = "queen";
-var cardTwo = "queen";
-var cardThree = "king";
-var cardFour = "king";
-*/
+//sets the score to zero
+var score = 0;
 // sets possible card attributes
 var cards = ["queen", "queen", "king", "king"];
 // creates an empty set of cards in play to be filled later
 var cardsInPlay = [];
+//borrow the Fisher-Yates function to shuffle the cards
+var shuffle = function(cards){
+	var m = cards.length, t, i;
+	while (m) {
+		i = Math.floor(Math.random() * m--);
+		t = cards[m];
+		cards[m] = cards[i];
+		cards[i] = t;
+	}
+	return cards;
+};
+//shuffles the cards
+shuffle(cards);
 
 //function to create a game board
 var createBoard = function() {
@@ -30,14 +38,14 @@ var createBoard = function() {
 	};
 };
 
-// Defines game logic for matching 
+// Defines game logic for matching
 // currently matches if same card is clicked twice
 var isMatch = function(){
 	if (cardsInPlay[0] === cardsInPlay[1]){
 		setTimeout(function(){ alert("You found a match!"); }, 200);
-		} 
+		}
 	else {
-		setTimeout(function(){ alert("You found a match!"); }, 200);
+		setTimeout(function(){ alert("Sorry, try again."); }, 200);
 	};
 };
 
